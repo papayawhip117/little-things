@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Little Things</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <h1> my little things! </h1>
+    <div class="container">
+    <h1> ꒰ა my little things! ໒꒱ </h1>
     <p> papaya's internet corner. </p>
-
+    <p> ────୨୧────  </p>
     <h2> collection of likables: </h2>
     <p> stardew valley </p>
     <p> bunnies</p>
     <p> crispy tuna rice </p>
-
+    <p> ────୨୧────  </p>
     <h3> Today's docket: </h3>
     <p> improve my git skills </p>
     <p> remember that i can code...oopsie </p>
@@ -25,10 +27,24 @@
 
     <script>
     function WhatNow() {
-        document.getElementById("What").textContent = "dance brrreeeeaakkkk!";
-    }
+
+    const littleThings = [
+        "dance brrreeeeaakkkk!",
+        "play some stardew",
+        "put on some lofi",
+        "watch youtube",
+        "water your plants",
+        "eat a snack",
+        "grab a Dr.Pepper"
+    ];
+
+    const randomThing = Math.floor(Math.random() * littleThings.length);
+
+    document.getElementById("What").textContent = littleThings[randomThing];
+}
+
 </script>
 
-
+</div>
 </body>
 </html>
